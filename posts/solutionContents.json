@@ -1,0 +1,19 @@
+{
+    "solution": [
+        {
+            "title":"AI",
+            "content":"Recent years, Artificial Intelligence become an essential part of industry. Our expert AI engineer will implements AI based solution just for you.",
+            "tagline":"Computer Vision, Robotics, NLP"
+        },
+        {
+            "title":"IoT",
+            "content":"Interconnection between system become a thing nowadays. Deliver information via the internet itself, anytime, anywhere.",
+            "tagline":"Work Automation"
+        },
+        {
+            "title":"Software",
+            "content":"Maximize your company with software application to create organized system and even a marketing medium.",
+            "tagline":"Website, Mobile App"
+        }
+    ]
+}
