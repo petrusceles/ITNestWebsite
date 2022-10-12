@@ -1,7 +1,10 @@
-// import Head from 'next/head';
+
 import Layout, { siteTitle } from '../components/layout';
 import Hero from '../components/hero'
 import Solution from '../components/solution';
+import Navbar from '../components/navbar';
+import { useEffect } from 'react';
+import { Slide } from "react-awesome-reveal";
 // import { getSortedPostsData } from '../lib/posts';
 
 // export async function getStaticProps() {
@@ -14,10 +17,17 @@ import Solution from '../components/solution';
 // }
 
 export default function Home() {
+
   return (
     <Layout>
-      <Hero />
-      <Solution />
+      <div className='bg-gradient-to-r from-violet-100 to-cyan-50'>
+        <div className='container px-12 lg:px-0'>
+          <Hero/>
+        </div>
+      </div>
+      <div className='container px-12 lg:px-0'>
+        <Solution />
+      </div>
     </Layout>
   );
 }

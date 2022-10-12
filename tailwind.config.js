@@ -7,12 +7,12 @@ module.exports = {
     extend: {
       colors: {
         'primary':'#724dea',
-        'secondary':'#09ecff'
+        'secondary':'#09ecff',
+        'dark':'#0f172a'
       }
     },
     container: {
-      center:true,
-      padding:'40px'
+      center:true
     },
     fontFamily: {
       'sans': ['Roboto', 'sans-serif']
