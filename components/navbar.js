@@ -61,11 +61,11 @@ function HamburgerButton({}) {
 
 function NavList({list}) {
     return (<div className='w-auto group pt-7 lg:pt-0 items-center relative'>
-                          <Link href={'#'}>
-                              <a className='h-[120%] block lg:px-3'>{list}</a>
-                          </Link>
-                          <div className='absolute w-full -bottom-3 flex  lg:justify-center -z-10'>
-                              <span className='w-0 group-hover:w-3/4 transition-all duration-200 ease-in-out h-[3px] my-2 block bg-primary rounded-full'></span>
-                          </div>
-                      </div>);
-  }
+                <Link href={'#'}>
+                    <a className='h-[120%] block lg:px-3'>{list}</a>
+                </Link>
+                <div className='absolute w-full -bottom-3 flex  lg:justify-center -z-10'>
+                    <span className='w-0 group-hover:w-3/4 transition-all duration-200 ease-in-out h-[3px] my-2 block bg-primary rounded-full'></span>
+                </div>
+            </div>);
+}
