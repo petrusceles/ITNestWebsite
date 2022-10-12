@@ -10,22 +10,27 @@ export default function Navbar () {
     const showOffCanvas = () => {
         offCanvas.current.classList.add('translate-x-[0%]')
     }
+    const list = ["Home", "Solution", "Why Us", "Contact"]
     return (
-        <div className='flex py-5 fixed bg-white left-0 z-[10] w-full px-12 lg:px-0'>
+        <div className='flex py-5 fixed bg-white left-0 z-[10] w-full px-12 lg:px-8'>
             <div className='container lg:flex lg:items-center'>
-                <div className='w-1/2 px-2 flex'>
-                    <div className='w-[60px] flex'>
-                        <Image
-                        src={LogoImage}
-                        alt='logo'
-                        />
-                    </div>
+                <div className='w-1/4 px-2 md:px-12 flex'>
+                    <Link href={"#"}>
+                        <a>
+                            <div className='w-[60px] flex'>
+                                <Image
+                                src={LogoImage}
+                                alt='logo'
+                                />
+                            </div>
+                        </a>
+                    </Link>
                 </div>
-                <div className='flex w-1/2 justify-center'>
+                <div className='flex w-3/4 justify-center'>
                     <button id="hamburger" onClick={showOffCanvas} name="hamburger" type="button" class="block group absolute bottom-1/4 pl-4 pr-1 right-[8%] top-1/4 lg:hidden">
                         <HamburgerButton />
                     </button>
-                    <div ref={offCanvas} className='flex-wrap bg-gradient-to-r from-violet-100 to-cyan-50 px-8 sm:px-16 translate-x-[100%] transition-all duration-300 ease-in-out md:px-20 pt-9 right-0 top-0 h-[1000px] w-1/2 z-10 absolute lg:translate-x-0 lg:static lg:h-full lg:w-full'>
+                    <div ref={offCanvas} className='flex-wrap bg-gradient-to-r from-violet-100 to-cyan-50 px-8 sm:px-16 translate-x-[100%] transition-all duration-300 ease-in-out md:px-20 pt-9 right-0 top-0 h-[1000px] w-1/2 z-10 absolute lg:translate-x-0 lg:static lg:h-full lg:w-full lg:flex lg:gap-20 lg:content-center lg:pt-0 lg:justify-end lg:bg-gradient-to-r lg:from-transparent lg:to-transparent'>
                         <div className='flex justify-between w-full lg:hidden'>
                             <h2 class="font-semibold text-xl text-primary">IT NEST</h2>
                             <button id="close" onClick={hideOffCanvas}>
@@ -34,26 +39,11 @@ export default function Navbar () {
                                 </svg>
                             </button>
                         </div>
-                        <div className='w-full lg:w-1/12 pt-7 bg-slate-300 lg'>
-                            <Link href='#'>
-                                <a>Home</a>
-                            </Link>
-                        </div>
-                        <div className='w-full pt-7 lg:w-1/12'>
-                            <Link href='#'>
-                                <a>Solution</a>
-                            </Link>
-                        </div>
-                        <div className='w-full pt-7 lg:w-1/12'>
-                            <Link href='#'>
-                                <a>Why Us</a>
-                            </Link>
-                        </div>
-                        <div className='w-full pt-7 lg:w-1/12'>
-                            <Link href='#'>
-                                <a>Contact</a>
-                            </Link>
-                        </div>
+                        {list.map((e) => {
+                            return (
+                                <NavList list={e}/>
+                            )
+                        })}
                     </div>
                 </div>
             </div>
@@ -65,4 +55,17 @@ function HamburgerButton({}) {
     return (<><span class="hamburger-line group-hover:-translate-x-1  transition-all duration-100 ease-in-out "></span>
                       <span class="hamburger-line"></span>
                       <span class="hamburger-line group-hover:-translate-x-1  transition-all duration-100 ease-in-out "></span></>);
+}
+
+
+
+function NavList({list}) {
+    return (<div className='w-auto group pt-7 lg:pt-0 items-center relative'>
+                          <Link href={'#'}>
+                              <a className='h-[120%] block lg:px-3'>{list}</a>
+                          </Link>
+                          <div className='absolute w-full -bottom-3 flex  lg:justify-center -z-10'>
+                              <span className='w-0 group-hover:w-3/4 transition-all duration-200 ease-in-out h-[3px] my-2 block bg-primary rounded-full'></span>
+                          </div>
+                      </div>);
   }

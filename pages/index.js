@@ -21,11 +21,11 @@ export default function Home() {
   return (
     <Layout>
       <div className='bg-gradient-to-r from-violet-100 to-cyan-50'>
-        <div className='container px-12 lg:px-0'>
+        <div className='container px-12 lg:px-8'>
           <Hero/>
         </div>
       </div>
-      <div className='container px-12 lg:px-0'>
+      <div className='container px-12 lg:px-8'>
         <Solution />
       </div>
     </Layout>
