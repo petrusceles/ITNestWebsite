@@ -3,7 +3,6 @@ import AIImage from '../public/images/solutions/AISolution.png'
 import IoTImage from '../public/images/solutions/IoTSolution.png'
 import SoftwareImage from '../public/images/solutions/SoftwareSolution.png'
 import SolutionContent from '../posts/solutionContents.json' assert {type: 'json'};
-
 export default function Solution () {
     const solutions = SolutionContent.solution;
     const images = [AIImage, IoTImage, SoftwareImage]
@@ -13,9 +12,17 @@ export default function Solution () {
     })
     // console.log(solutionsReadyToUse)
     return (
-        <div className='pt-14'>
-            <h1 className='font-semibold text-3xl text-center lg:text-4xl pb-9'>SOLUTIONS</h1>
-            <div className='flex flex-col'>{solutionsReadyToUse}</div>
+        <div className='mt-10'>
+            <div className='flex items-center gap-6'>
+                <div className='flex w-fit items-center'>
+                    <h1 className='  font-semibold content-center text-3xl lg:text-4xl'>SOLUTIONS</h1>
+                </div>
+                <div className='w-full flex items-center relative'>
+                    <div className='h-6 w-6 rounded-full bg-violet-100'/>
+                    <div className='h-[10px] w-full left-0 bg-gradient-to-r from-violet-100 to-cyan-50 absolute rounded-md -z-10'/>
+                </div>
+            </div>
+            <div  className='flex flex-col'>{solutionsReadyToUse}</div>
         </div>
     )
 }
