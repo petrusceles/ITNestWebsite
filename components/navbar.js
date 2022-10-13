@@ -41,7 +41,7 @@ export default function Navbar () {
                         </div>
                         {list.map((e) => {
                             return (
-                                <NavList list={e}/>
+                                <NavList key={e} list={e}/>
                             )
                         })}
                     </div>
