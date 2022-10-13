@@ -40,7 +40,7 @@ export default function solutionSegment ({title,content,image,tagline, id, key})
                     </Link>
                 </div>
             </div>
-            <div ref={imageSolution} className={'hidden lg:opacity-40 lg:flex w-full' + (id % 2 == 0 ? " lg:order-1":" lg:order-3")}>
+            <div className={'hidden lg:opacity-40 lg:flex w-full' + (id % 2 == 0 ? " lg:order-1":" lg:order-3")}>
                 <div className='bg-secondary w-36 h-20  shadow-lg shadow-cyan-500'>
                 </div>
             </div>
