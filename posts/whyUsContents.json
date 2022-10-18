@@ -1,0 +1,19 @@
+{
+  "whyUs": [
+    {
+      "id": 1,
+      "title": "Research Based",
+      "content": "Our ideas based on research paper that validate the best solution that we offer to you."
+    },
+    {
+      "id": 2,
+      "title": "Experienced",
+      "content": "Experience the process of improving ourselves and become better each day."
+    },
+    {
+      "id": 3,
+      "title": "Informative",
+      "content": "Communication is one of the main thing that we have to deliver. We believe with good communication we can deliver the best IT solution for you."
+    }
+  ]
+}
