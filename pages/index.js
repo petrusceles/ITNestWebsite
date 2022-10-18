@@ -2,9 +2,7 @@
 import Layout, { siteTitle } from '../components/layout';
 import Hero from '../components/hero'
 import Solution from '../components/solution';
-import Navbar from '../components/navbar';
-import { useEffect } from 'react';
-import { Slide } from "react-awesome-reveal";
+import Contact from '../components/contact';
 // import { getSortedPostsData } from '../lib/posts';
 
 // export async function getStaticProps() {
@@ -27,6 +25,7 @@ export default function Home() {
       </div>
       <div className='container px-12 lg:px-8'>
         <Solution />
+        <Contact />
       </div>
     </Layout>
   );
