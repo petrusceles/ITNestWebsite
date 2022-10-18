@@ -15,7 +15,7 @@ export default function Navbar () {
         <div className='flex py-5 fixed bg-white left-0 z-[10] w-full px-12 lg:px-8'>
             <div className='container lg:flex lg:items-center'>
                 <div className='w-1/4 px-2 md:px-12 flex'>
-                    <Link href={"#"}>
+                    <Link href="./">
                         <a>
                             <div className='w-[60px] flex'>
                                 <Image
