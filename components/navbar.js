@@ -17,7 +17,7 @@ export default function Navbar () {
     }
     const list = ["Home", "Solution", "Why Us", "Contact"]
     return (
-        <div className='flex py-3 fixed bg-white left-0 z-[10] w-full px-12 lg:px-8'>
+        <div className='flex py-3 fixed bg-white left-0 z-[10] w-full px-12 lg:px-8 shadow-md'>
             <div className='container lg:flex lg:items-center'>
                 <div className='w-1/4 px-2 md:px-12 flex'>
                     <Link href="./">
