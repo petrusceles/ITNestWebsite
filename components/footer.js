@@ -82,11 +82,11 @@ export default function Footer() {
         </div>
         <div className="order-2 space-y-5  row-span-2 text-right lg:text-left lg:order-1">
           <div className="space-y-1">
-            <h4 className="font-semibold">Alamat</h4>
+            <h4 className="font-semibold">Address</h4>
             <p>Pogung Lor, Mlati, Sleman, Daerah Istimewa Yogyakarta</p>
           </div>
           <div className="space-y-1">
-            <h4 className="font-semibold">Telepon/WA</h4>
+            <h4 className="font-semibold">Phone/WhatsApp</h4>
             <p>+6285753361637</p>
           </div>
           <div className="space-y-1">
@@ -96,7 +96,7 @@ export default function Footer() {
         </div>
         <div className="order-last col-span-2 lg:col-span-1 text-center font-light text-sm pt-10 lg:pt-0 ">
           <div>© Copyright 2022 ITNest</div>
-          <Image src={itnest} alt={itnest} />
+          {/* <Image src={itnest} alt={itnest} /> */}
         </div>
       </div>
     </>
