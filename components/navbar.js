@@ -69,7 +69,7 @@ function NavList({list}) {
     <>
         <div className='lg:w-max w-full flex group pt-7 lg:pt-0 items-center relative'>
             <Link href={'#' + list.replace(/\s/g, '').toLowerCase()}>
-                <a className='h-[120%] block lg:px-3 font-medium'>{list}</a>
+                <a className='h-[100%] block lg:px-3 font-medium align-middle'>{list}</a>
             </Link>
             <div className='absolute w-full -bottom-3 flex  lg:justify-center -z-10'>
                 <span className='w-0 group-hover:w-3/4 transition-all duration-200 ease-in-out h-[3px] my-2 block bg-primary rounded-full'></span>
@@ -79,8 +79,8 @@ function NavList({list}) {
                     return (
                     <>
                     <SolutionDropDown className={"overflow-hidden opacity-0 h-fit group-hover:opacity-100 hidden p-2 lg:block absolute flex-wrap w-[200%] top-[150%] bg-violet-50/90 rounded-md transition-all duration-300 ease-in-out shadow-md"}/>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down absolute -right-3 top-[8%] hidden lg:block" viewBox="0 0 16 16" >
-                        <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill absolute -right-3 hidden lg:block" viewBox="0 0 16 16">
+                        <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
                     </svg>
                     </>
                     )

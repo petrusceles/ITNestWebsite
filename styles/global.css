@@ -6,6 +6,9 @@
     @apply w-[33px] h-[3px] my-2 block bg-primary rounded-xl;
 }
 
-html {
-    scroll-behavior: smooth;
-  }
+:target:before {
+    content: "";
+    display: block;
+    height: 120px;
+    margin: -120px 0 0;
+}
