@@ -3,7 +3,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 export default function Hero() {
     return (
-    <div className='flex lg:flex-wrap lg:flex pt-32 pb-8 gap-3 lg:gap-1'>
+    <div id='home' className='flex lg:flex-wrap lg:flex pt-32 pb-8 gap-3 lg:gap-1'>
       <div className='w-[50%] lg:w-[45%] grid grid-cols-1 gap-3 lg:gap-4 content-center lg:mx-auto'>
         <div>
           <p className='text-sm lg:text-lg text-dark font-semibold'>Welcome to</p>

@@ -5,11 +5,9 @@ import 'react-toastify/dist/ReactToastify.css';
 const axios = require('axios').default;
 export default function Contact() {
 
-    const [message,setMessage] = useState('t')
-    const [email,setEmail] = useState('t')
-    const [name, setName] = useState('t')
-
-    const emailButton = useRef(null)
+    const [message,setMessage] = useState('')
+    const [email,setEmail] = useState('')
+    const [name, setName] = useState('')
 
     const handleName = (event) => {
         setName(event.target.value)
@@ -37,7 +35,7 @@ export default function Contact() {
             },
         }).then((response) => {
             if (response.status >= 400) {
-                toast.error("Failed to sent email")
+                toast.error("Email failed to send")
             } else {
                 toast.success("Email sent!")
                 setEmail(''); setMessage(''); setName('');
@@ -59,7 +57,7 @@ export default function Contact() {
             pauseOnHover
             theme="colored"
             />
-            <div className="grid grid-rows-1 py-36 gap-3 lg:grid-rows-3 lg:grid-flow-col text-sm lg:text-lg text-dark">
+            <div id="contact" className="grid grid-rows-1 py-36 gap-3 lg:grid-rows-3 lg:grid-flow-col text-sm lg:text-lg text-dark">
                 <div className="flex flex-col lg:row-span-3 lg:order-1 lg:mr-2 justify-center items-center lg:bg-gradient-to-r lg:from-violet-100 lg:to-cyan-50 rounded-2xl">
                     <h1 className="text-2xl font-semibold lg:text-3xl">CONTACT</h1>
                     <p className="">Get in touch with us</p>
