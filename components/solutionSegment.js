@@ -1,6 +1,5 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import { useState, useEffect, useRef} from 'react'
 
 
 
@@ -12,7 +11,7 @@ export default function solutionSegment ({title,content,image,tagline, id}) {
     return (
         <div className="grid grid-cols-1 lg:grid-cols-12 pt-8 items-center justify-center max-w-md lg:max-w-none mx-auto">
             <div className={"order-1 w-full flex justify-center lg:order-2 lg:max-w-2xl lg:col-span-7 lg:justify-self-center"}>
-                <div className={'w-10/12 lg:max-w-lg flex justify-center items-center transition duration-100 ease-in-out'}>
+                <div className={'w-10/12 lg:max-w-lg flex justify-center items-center transition duration-100 ease-in-out' + (id % 2 != 0 ? " scale-90":"")}>
                     <Image
                     src={image}
                     alt={title+" Solution"}

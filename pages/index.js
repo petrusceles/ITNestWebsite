@@ -6,6 +6,11 @@ import Footer from "../components/footer";
 import Navbar from "../components/navbar";
 import { useEffect } from "react";
 import { Slide } from "react-awesome-reveal";
+
+import Layout, { siteTitle } from '../components/layout';
+import Hero from '../components/hero'
+import Solution from '../components/solution';
+import Contact from '../components/contact';
 // import { getSortedPostsData } from '../lib/posts';
 
 // export async function getStaticProps() {
@@ -20,15 +25,16 @@ import { Slide } from "react-awesome-reveal";
 export default function Home() {
   return (
     <Layout>
-      <div className="bg-gradient-to-r from-violet-100 to-cyan-50">
-        <div className="container px-12 lg:px-8">
-          <Hero />
+      <div className='bg-gradient-to-r from-violet-100 to-cyan-50 '>
+        <div className='container px-12 lg:px-8'>
+          <Hero/>
         </div>
       </div>
       <div className="container px-12 lg:px-8">
         <Solution />
         <WhyUs />
         <Footer />
+        <Contact />
       </div>
     </Layout>
   );
