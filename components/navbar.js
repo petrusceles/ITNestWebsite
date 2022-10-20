@@ -35,7 +35,7 @@ export default function Navbar () {
                     <button id="hamburger" onClick={showOffCanvas} name="hamburger" type="button" className="block group absolute bottom-1/4 pl-4 pr-1 right-[8%] top-1/4 lg:hidden">
                         <HamburgerButton />
                     </button>
-                    <div ref={offCanvas} className='flex-wrap bg-gradient-to-r from-violet-100 to-cyan-50 px-8 sm:px-16 translate-x-[100%] transition-all duration-300 ease-autoin-out md:px-20 pt-9 right-0 top-0 h-[1000px] w-1/2 z-10 absolute lg:translate-x-0 lg:static lg:h-full lg:w-full lg:flex lg:gap-20 lg:content-center lg:pt-0 lg:justify-end lg:bg-gradient-to-r lg:from-transparent lg:to-transparent'>
+                    <div ref={offCanvas} className='flex-wrap bg-gradient-to-r from-violet-100 to-cyan-50 px-8 sm:px-16 translate-x-[100%] transition-all duration-300 ease-autoin-out md:px-20 pt-9 right-0 top-0 h-[1000px] w-[65%] z-10 absolute shadow-xl lg:shadow-none lg:translate-x-0 lg:static lg:h-full lg:w-full lg:flex lg:gap-20 lg:content-center lg:pt-0 lg:justify-end lg:bg-gradient-to-r lg:from-transparent lg:to-transparent'>
                         <div className='flex justify-between w-full lg:hidden'>
                             <h2 className="font-semibold text-xl text-primary">IT NEST</h2>
                             <button id="close" onClick={hideOffCanvas}>
@@ -90,7 +90,7 @@ function NavList({list}) {
         
             {(() => {
                 if (list == 'Solution') {
-                    return (<SolutionDropDown className={"lg:hidden flex-wrap px-7 pt-5"}/>)
+                    return (<SolutionDropDown className={"lg:hidden flex-wrap pl-7 pt-5"}/>)
                 }
             })()}
     </>
@@ -104,17 +104,17 @@ export function SolutionDropDown({className}) {
         <div className={className}>
             <div className='relative'>
                 <Link href={'#learn'}>
-                    <a className='h-[120%] block lg:py-2 lg:hover:bg-primary lg:hover:text-white align-middle lg:rounded-md lg:px-3 hover:text-primary transition duration-200 ease-in-out'>AI Solution</a>
+                    <a className='h-[120%] block lg:py-2 lg:hover:bg-primary lg:hover:text-white align-middle lg:rounded-md lg:px-3 hover:text-primary transition duration-200 ease-in-out w-full'>AI Solution</a>
                 </Link>
             </div>
             <div className='py-3 relative'>
                 <Link href={'#learn'}>
-                    <a className='h-[120%] block lg:py-2 lg:hover:bg-primary lg:hover:text-white align-middle lg:rounded-md lg:px-3 hover:text-primary transition duration-200 ease-in-out'>IoT Solution</a>
+                    <a className='h-[120%] block lg:py-2 lg:hover:bg-primary lg:hover:text-white align-middle lg:rounded-md lg:px-3 hover:text-primary transition duration-200 ease-in-out w-full'>IoT Solution</a>
                 </Link>
             </div>
             <div className='relative'>
                 <Link href={'#learn'}>
-                    <a className='h-[120%] block lg:py-2 lg:hover:bg-primary lg:hover:text-white align-middle lg:rounded-md lg:px-3 hover:text-primary transition duration-200 ease-in-out'>Software Solution</a>
+                    <a className='h-[120%] block lg:py-2 lg:hover:bg-primary lg:hover:text-white align-middle lg:rounded-md lg:px-3 hover:text-primary transition duration-200 ease-in-out w-full'>Software Solution</a>
                 </Link>
             </div>
         </div>
