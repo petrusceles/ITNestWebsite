@@ -57,7 +57,7 @@ export default function Contact() {
             pauseOnHover
             theme="colored"
             />
-            <div id="contact" className="grid grid-rows-1 py-24 gap-3 lg:grid-rows-3 lg:grid-flow-col text-sm lg:text-lg text-dark">
+            <div id="contact" className="grid grid-rows-1 lg:py-24 py-20 gap-3 lg:grid-rows-3 lg:grid-flow-col text-sm lg:text-lg text-dark">
                 <div className="flex flex-col lg:row-span-3 lg:order-1 justify-center items-center lg:bg-gradient-to-r lg:from-violet-100 lg:to-cyan-50 rounded-2xl">
                     <h1 className="text-2xl font-semibold lg:text-3xl">CONTACT</h1>
                     <p className="">Get in touch with us</p>
