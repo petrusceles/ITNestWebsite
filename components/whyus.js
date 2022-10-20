@@ -7,7 +7,7 @@ export default function WhyUs() {
   return (
     <>
       <div className="mt-6 flex flex-wrap lg:justify-between">
-        <div className="mt-14 grid grid-cols-2 lg:border-primary lg:border-4 lg:block lg:rounded-3xl lg:w-[336.08px]  lg:space-y-5 lg:text-center lg:py-12 lg:px-9">
+        <div className="mt-14 grid grid-cols-2 lg:border-primary lg:border-[3px] lg:block lg:rounded-3xl lg:w-[336.08px]  lg:space-y-5 lg:text-center lg:py-12 lg:px-9">
           <div className="">
             <Image src={researchBased} alt={"Research Based"} />
           </div>
@@ -21,7 +21,7 @@ export default function WhyUs() {
             </p>
           </div>
         </div>
-        <div className="mt-14 grid grid-cols-2 lg:grid-cols-1 lg:border-primary lg:border-4 lg:rounded-3xl lg:w-[336.08px]  lg:space-y-5 lg:text-center lg:py-14 lg:px-5">
+        <div className="mt-14 grid grid-cols-2 lg:grid-cols-1 lg:border-primary lg:border-[3px] lg:rounded-3xl lg:w-[336.08px]  lg:space-y-5 lg:text-center lg:py-14 lg:px-5">
           <div className="w-full flex items-center justify-center order-last lg:order-first fill-white scale-110 ">
             <Image
               src={experienced}
@@ -39,7 +39,7 @@ export default function WhyUs() {
             </p>
           </div>
         </div>
-        <div className="mt-14 grid grid-cols-2 lg:border-primary lg:border-4 lg:block lg:rounded-3xl lg:w-[336.08px] lg:space-y-5 lg:text-center lg:py-12 lg:px-5">
+        <div className="mt-14 grid grid-cols-2 lg:border-primary lg:border-[3px] lg:block lg:rounded-3xl lg:w-[336.08px] lg:space-y-5 lg:text-center lg:py-12 lg:px-5">
           <div className="w-full">
             <Image src={informative} alt={"informative"} />
           </div>

@@ -57,8 +57,8 @@ export default function Contact() {
             pauseOnHover
             theme="colored"
             />
-            <div id="contact" className="grid grid-rows-1 py-36 gap-3 lg:grid-rows-3 lg:grid-flow-col text-sm lg:text-lg text-dark">
-                <div className="flex flex-col lg:row-span-3 lg:order-1 lg:mr-2 justify-center items-center lg:bg-gradient-to-r lg:from-violet-100 lg:to-cyan-50 rounded-2xl">
+            <div id="contact" className="grid grid-rows-1 py-24 gap-3 lg:grid-rows-3 lg:grid-flow-col text-sm lg:text-lg text-dark">
+                <div className="flex flex-col lg:row-span-3 lg:order-1 justify-center items-center lg:bg-gradient-to-r lg:from-violet-100 lg:to-cyan-50 rounded-2xl">
                     <h1 className="text-2xl font-semibold lg:text-3xl">CONTACT</h1>
                     <p className="">Get in touch with us</p>
                 </div>
@@ -73,7 +73,7 @@ export default function Contact() {
                         Please enter a valid email address
                     </p>
                 </div>
-                <div className="flex flex-col gap-2 lg:order-5 lg:row-span-3 lg:px-3">
+                <div className="flex flex-col gap-2 lg:order-5 lg:row-span-3">
                     <label className="font-medium">Message</label>
                     <textarea name="message" id="message"  value={message} onChange={handleMessage} className="outline-0 pr-4 py-3 pl-3 border-2 rounded-lg border-primary h-44 align-top mt-0 scrollbar-thumb-primary resize-none scrollbar-thin lg:h-full lg:border-[3px]"/>
                 </div>

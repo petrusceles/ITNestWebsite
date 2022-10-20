@@ -3,13 +3,6 @@ import Hero from "../components/hero";
 import Solution from "../components/solution";
 import WhyUs from "../components/whyus";
 import Footer from "../components/footer";
-import Navbar from "../components/navbar";
-import { useEffect } from "react";
-import { Slide } from "react-awesome-reveal";
-
-import Layout, { siteTitle } from '../components/layout';
-import Hero from '../components/hero'
-import Solution from '../components/solution';
 import Contact from '../components/contact';
 // import { getSortedPostsData } from '../lib/posts';
 
@@ -33,8 +26,13 @@ export default function Home() {
       <div className="container px-12 lg:px-8">
         <Solution />
         <WhyUs />
-        <Footer />
         <Contact />
+      </div>
+
+      <div className='bg-gradient-to-r from-violet-100 to-cyan-50 '>
+        <div className='container px-12 lg:px-8'>
+        <Footer />
+        </div>
       </div>
     </Layout>
   );

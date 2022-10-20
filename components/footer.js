@@ -4,7 +4,7 @@ import itnest from "../public/images/footer/itnest.svg";
 export default function Footer() {
   return (
     <>
-      <div className="mt-20 grid grid-cols-2 lg:grid-cols-4 mb-14">
+      <div className="pt-10 pb-8 lg:pb-9 grid grid-cols-2 lg:grid-cols-4">
         <div className="block space-y-5 order-1 lg:order-2 lg:font-bold lg:pl-16 ">
           <div>
             <a
@@ -49,12 +49,12 @@ export default function Footer() {
             <a
               href="https://www.instagram.com/itnest.id/?next=%2F"
               target="_blank"
-              class="w-auto border-4 rounded-xl h-fit border-transparent  mr-3 flex justify-center items-center  text-slate-800 hover:border-primary hover:bg-primary hover:text-white transition duration-200"
+              className="w-auto border-4 rounded-xl h-fit border-transparent  mr-3 flex justify-center items-center  text-slate-800 hover:border-primary hover:bg-primary hover:text-white transition duration-200"
             >
               <svg
                 role="img"
                 width="30"
-                class="fill-current"
+                className="fill-current"
                 viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg"
               >
@@ -65,12 +65,12 @@ export default function Footer() {
             <a
               href="https://www.linkedin.com/company/it-nestindonesia/"
               target="_blank"
-              class="w-auto border-4 rounded-lg h-fit border-transparent  mr-3 flex justify-center items-center  text-slate-800 hover:border-primary hover:bg-primary hover:text-white transition duration-200"
+              className="w-auto border-4 rounded-lg h-fit border-transparent  mr-3 flex justify-center items-center  text-slate-800 hover:border-primary hover:bg-primary hover:text-white transition duration-200"
             >
               <svg
                 role="img"
                 width="30"
-                class="fill-current"
+                className="fill-current"
                 viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg"
               >
