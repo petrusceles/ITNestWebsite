@@ -16,7 +16,7 @@ export default function Hero() {
         </div>
         <div className='my-2'>
           <Link href='#contact'>
-            <a className='bg-primary px-6 py-2 font-semibold text-white text-sm rounded-full lg:text-lg lg:py-2 hover:bg-transparent hover:outline lg:hover:outline-3 hover:outline-2 hover:outline-primary hover:text-primary transtition duration-150 ease-in-out'>Contact Us</a>
+            <a className='bg-primary px-6 py-2 font-semibold text-white text-sm rounded-full lg:text-lg lg:py-2 hover:bg-transparent hover:outline lg:hover:outline-3 lg:hover:outline-offset-[-2px] hover:outline-[3px] hover:outline-primary hover:text-primary transtition duration-150 ease-in-out'>Contact Us</a>
           </Link>
         </div>
       </div>
