@@ -5,10 +5,3 @@
 .hamburger-line {
     @apply w-[33px] h-[3px] my-2 block bg-primary rounded-xl;
 }
-
-:target:before {
-    content: "";
-    display: block;
-    height: 120px;
-    margin: -120px 0 0;
-}

@@ -6,13 +6,13 @@ import experienced from "../public/images/whyUs/Experienced.svg";
 export default function WhyUs() {
   return (
     <>
-      <div className="mt-6 flex flex-wrap lg:justify-between">
+      <div id="whyus" className="mt-6 flex flex-wrap lg:justify-between">
         <div className="mt-14 grid grid-cols-2 lg:border-primary lg:border-[3px] lg:block lg:rounded-3xl lg:w-[336.08px]  lg:space-y-5 lg:text-center lg:py-12 lg:px-9">
           <div className="">
             <Image src={researchBased} alt={"Research Based"} />
           </div>
           <div>
-            <h1 className="text-3xl font-medium lg:text-[35px] lg:font-normal">
+            <h1 className="text-3xl font-medium lg:font-normal">
               Research Based
             </h1>
             <p className="mt-5 lg:text-lg lg:px-5">
@@ -22,7 +22,7 @@ export default function WhyUs() {
           </div>
         </div>
         <div className="mt-14 grid grid-cols-2 lg:grid-cols-1 lg:border-primary lg:border-[3px] lg:rounded-3xl lg:w-[336.08px]  lg:space-y-5 lg:text-center lg:py-14 lg:px-5">
-          <div className="w-full flex items-center justify-center order-last lg:order-first fill-white scale-110 ">
+          <div className="w-full flex items-center justify-center order-last lg:order-first fill-white scale-110 lg:scale-125 ">
             <Image
               src={experienced}
               alt={"Experienced"}
@@ -30,7 +30,7 @@ export default function WhyUs() {
             />
           </div>
           <div className="lg:pt-10">
-            <h1 className="text-3xl font-medium lg:text-[35px] lg:font-normal">
+            <h1 className="text-3xl font-medium lg:font-normal">
               Experienced
             </h1>
             <p className="mt-5 lg:text-lg lg:px-5">
@@ -44,7 +44,7 @@ export default function WhyUs() {
             <Image src={informative} alt={"informative"} />
           </div>
           <div>
-            <h1 className="text-3xl font-medium lg:text-[35px] lg:font-normal">
+            <h1 className="text-3xl font-medium lg:font-normal">
               Informative
             </h1>
             <p className="mt-5 lg:text-lg lg:px-5">

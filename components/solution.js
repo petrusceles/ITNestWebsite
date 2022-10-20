@@ -12,7 +12,7 @@ export default function Solution () {
     })
     // console.log(solutionsReadyToUse)
     return (
-        <div id='solution' className='mt-10'>
+        <div id='solution' className='mt-10 anchor'>
             <div className='flex items-center gap-6'>
                 <div className='flex w-fit items-center'>
                     <h1 className='  font-semibold content-center text-3xl lg:text-4xl'>SOLUTIONS</h1>
