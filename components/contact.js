@@ -35,7 +35,7 @@ export default function Contact() {
             },
         }).then((response) => {
             if (response.status >= 400) {
-                toast.error("Email failed to send")
+                toast.error("Email fail to send")
             } else {
                 toast.success("Email sent!")
                 setEmail(''); setMessage(''); setName('');
