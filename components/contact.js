@@ -78,7 +78,7 @@ export default function Contact() {
                     <textarea name="message" id="message"  value={message} onChange={handleMessage} className="outline-0 pr-4 py-3 pl-3 border-2 rounded-lg border-primary h-44 align-top mt-0 scrollbar-thumb-primary resize-none scrollbar-thin lg:h-full lg:border-[3px]"/>
                 </div>
                 <div className="flex justify-end lg:order-4 items-center lg:px-3">
-                    <button onClick={handleSubmitButton} className="font-semibold bg-primary py-2 align-middle text-center text-white px-9 rounded-lg lg:h-1/2 hover:shadow-md duration-150 ease-in-out">Submit</button>
+                    <button onClick={handleSubmitButton} className="font-semibold bg-primary py-2 align-middle text-center text-white px-9 rounded-lg lg:h-1/2 hover:bg-white hover:outline hover:outline-[3px] hover:outline-offset-[-3px] hover:outline-primary hover:text-primary duration-150 ease-in-out">Submit</button>
                 </div>
             </div>
         </>
