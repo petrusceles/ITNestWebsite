@@ -1,59 +1,28 @@
-import Image from "next/image";
-import researchBased from "../public/images/whyUs/researchBased.svg";
-import informative from "../public/images/whyUs/informative.svg";
-import experienced from "../public/images/whyUs/Experienced.svg";
+import WhyusSegment from './whyusSegment';
+import WhyusContent from '../posts/whyUsContents.json' assert {type: 'json'};
 
 export default function WhyUs() {
+  let whyusContent = WhyusContent.whyUs;
+  let whyusSegmentReadyToUse = whyusContent.map((e,i) => {
+    return (
+      <>
+        <WhyusSegment title={e.title} content={e.content} id={e.id}/>
+      </>
+    )
+  })
   return (
     <>
-      <div id="whyus" className="mt-6 flex flex-wrap lg:justify-between">
-        <div className="mt-14 grid grid-cols-2 lg:border-primary lg:border-[3px] lg:block lg:rounded-3xl lg:w-[336.08px]  lg:space-y-5 lg:text-center lg:py-12 lg:px-9">
-          <div className="">
-            <Image src={researchBased} alt={"Research Based"} />
-          </div>
-          <div>
-            <h1 className="text-3xl font-medium lg:font-normal">
-              Research Based
-            </h1>
-            <p className="mt-5 lg:text-lg lg:px-5">
-              Our ideas based on research paper that validate the best solution
-              that we offer to you.{" "}
-            </p>
-          </div>
+    <div className='flex gap-6 items-center pt-24'>
+        <div className='flex items-center '>
+            <h1 className=' font-semibold content-center text-3xl lg:text-4xl'>WHY<span className='text-primary'><span className='invisible text-xl'>s</span>US?</span></h1>
         </div>
-        <div className="mt-14 grid grid-cols-2 lg:grid-cols-1 lg:border-primary lg:border-[3px] lg:rounded-3xl lg:w-[336.08px]  lg:space-y-5 lg:text-center lg:py-14 lg:px-5">
-          <div className="w-full flex items-center justify-center order-last lg:order-first fill-white scale-110 lg:scale-125 ">
-            <Image
-              src={experienced}
-              alt={"Experienced"}
-              className="fill-white"
-            />
-          </div>
-          <div className="lg:pt-10">
-            <h1 className="text-3xl font-medium lg:font-normal">
-              Experienced
-            </h1>
-            <p className="mt-5 lg:text-lg lg:px-5">
-              Experience enchance ourselves to become better and better each
-              day.{" "}
-            </p>
-          </div>
+        <div className='w-full flex items-center relative '>
+            <div className='h-6 w-6 rounded-full bg-violet-100'/>
+            <div className='h-[10px] w-full left-0 bg-gradient-to-r from-violet-100 to-cyan-50 absolute rounded-md -z-10'/>
         </div>
-        <div className="mt-14 grid grid-cols-2 lg:border-primary lg:border-[3px] lg:block lg:rounded-3xl lg:w-[336.08px] lg:space-y-5 lg:text-center lg:py-12 lg:px-5">
-          <div className="w-full">
-            <Image src={informative} alt={"informative"} />
-          </div>
-          <div>
-            <h1 className="text-3xl font-medium lg:font-normal">
-              Informative
-            </h1>
-            <p className="mt-5 lg:text-lg lg:px-5">
-              Communication is one of the main thing that we have to deliver. We
-              believe with good communication we can deliver the best IT
-              Solution for you.{" "}
-            </p>
-          </div>
-        </div>
+    </div>
+      <div className='pt-8 xl:pt-10 lg:pt-5 container flex flex-wrap max-w-xl px-0 lg:max-w-none items-center lg:justify-between justify-center'>
+        {whyusSegmentReadyToUse}
       </div>
     </>
   );
