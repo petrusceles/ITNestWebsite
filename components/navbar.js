@@ -74,7 +74,7 @@ function NavList({list}) {
             <div className='absolute w-full -bottom-3 flex  lg:justify-center -z-10'>
                 <span className='w-0 group-hover:w-3/4 transition-all duration-200 ease-in-out h-[3px] my-2 block bg-primary rounded-full'></span>
             </div>
-            {(() => {
+            {/* {(() => {
                 if (list == 'Solution') {
                     return (
                     <>
@@ -85,14 +85,14 @@ function NavList({list}) {
                     </>
                     )
                 }
-            })()}
+            })()} */}
         </div>
         
-            {(() => {
+            {/* {(() => {
                 if (list == 'Solution') {
                     return (<SolutionDropDown className={"lg:hidden flex-wrap pl-7 pt-5"}/>)
                 }
-            })()}
+            })()} */}
     </>
     )
 }
