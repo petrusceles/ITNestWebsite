@@ -2,18 +2,19 @@ on:
   push:
     branches:
       - master
-name: Publish Website to Cpanel
+name: 🚀 Deploy website on push
 jobs:
   web-deploy:
-    name: Deploy
+    name: 🎉 Deploy
     runs-on: ubuntu-latest
     steps:
-    - name: Get latest code
+    - name: 🚚 Get latest code
       uses: actions/checkout@v2
-    - name: Sync Files
-      uses: SamKirkland/FTP-Deploy-Action@4.3.0
+    
+    - name: 📂 Sync files
+      uses: SamKirkland/FTP-Deploy-Action@4.3.2
       with:
-        ftp:server: ${{ secrets.FTP_SERVER }}
-        ftp-username: ${{ secrets.FTP_USERNAME }}
-        ftp-password: ${{ secrets.FTP_PASSWORD }}
+        server: ${{ secrets.FTP_SERVER }}
+        username: ${{ secrets.FTP_USERNAME }}
+        password: ${{ secrets.FTP_PASSWORD }}
   
