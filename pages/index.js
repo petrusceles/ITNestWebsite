@@ -15,15 +15,16 @@ export default function Home() {
   const value = {imageCounter,setImageCounter}
 
   useEffect(() => {
-    if (imageCounter >= 5) {
+    if (imageCounter >= 4) {
       setLoaded(true)
     }
-    console.log(imageCounter)
+    console.log(loaded)
   })
 
   return (
+    <>
+    {!loaded && <Loading />}
     <ImageLoadContext.Provider value={value}>
-      {!loaded && <Loading />}
     <Layout>
     <div className='bg-gradient-to-r from-violet-100 to-cyan-50 '>
       <div className='container px-12 lg:px-8'>
@@ -42,5 +43,6 @@ export default function Home() {
     </div>
   </Layout>
     </ImageLoadContext.Provider>
+    </>
     )
 }
