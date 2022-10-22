@@ -4,7 +4,7 @@ import ImageRendered from "./whyusIcon"
 export default function WhyusSegment ({title,content}) {
     return (
         <>
-            <div className="flex justify-start lg:items-start lg:px-0 lg:w-[31%] py-5 lg:py-0 lg:grid lg:grid-rows-2">
+            <div className="flex justify-start lg:items-end lg:px-0 lg:w-[31%] py-5 lg:py-0 lg:grid lg:grid-rows-2">
                 
                 <div className="w-1/2 lg:w-1/3 justify-self-center lg:bg-none bg-gradient-to-r from-violet-50 mr-6 lg:mr-0 to-cyan-50 rounded-xl flex justify-center items-center ">
                 <Slide triggerOnce={true} direction="up">
