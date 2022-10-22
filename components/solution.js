@@ -14,7 +14,6 @@ export default function Solution () {
     const solutions = SolutionContent.solution;
     const images = [AIImage, IoTImage, SoftwareImage]
     const icon = [AIIcon,IoTIcon, SoftwareIcon]
-    const blob = [AIBlob, IoTBlob, SoftwareBlob]
     const solutionsReadyToUse = solutions.map((e,i) => {
         return (
             <SolutionSegment key={i} title={e.title} image={images[i]} content={e.content} tagline={e.tagline} id={e.id} icon={icon[i]} blob={blob[i]}/>)
