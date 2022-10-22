@@ -20,7 +20,6 @@ export default function Home() {
     }
     console.log(loaded)
   })
-
   return (
     <>
     {!loaded && <Loading />}
