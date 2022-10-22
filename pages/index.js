@@ -13,12 +13,24 @@ export default function Home() {
   const [loaded,setLoaded] = useState(false)
 
   const value = {imageCounter,setImageCounter}
-
+  const [timePassed, setTimePassed] = useState(0)
   useEffect(() => {
     if (imageCounter >= 6) {
       setLoaded(true)
     }
-    console.log(loaded)
+
+    if (timePassed >= 8) {
+      setLoaded(true)
+      clearInterval(interval);
+    }
+
+    console.log(timePassed)
+    
+    const interval = !loaded && setInterval(() => {
+      setTimePassed((prev) => {return prev+1});
+    },1000) 
+
+    return () => clearInterval(interval);
   })
   return (
     <>
