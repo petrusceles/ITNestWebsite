@@ -1,5 +1,9 @@
+require('dotenv').config()
 import Validator from 'fastest-validator'
 import nodemailer from 'nodemailer'
+const {
+    EMAIL,PASSWORD,EMAIL_TO
+} = process.env
 const v = new Validator();
 export default function handler(req,res) {
     if (req.method === 'POST') {
@@ -23,15 +27,15 @@ export default function handler(req,res) {
         let mailTransporter = nodemailer.createTransport({
             service:'gmail',
             auth: {
-                user: 'itnest.transporter@gmail.com',
-                pass:'aoazbaaoccnbphqp'
+                user: EMAIL,
+                pass: PASSWORD
             }
         })
     
         let mailDetails = {
-            from: 'itnest.transporter@gmail.com',
-            to:'petrusprihantoro@gmail.com',
-            subject:'Test',
+            from: EMAIL,
+            to:EMAIL_TO,
+            subject:'BUSINESS',
             text:emailContent
         }
         mailTransporter.sendMail(mailDetails, (err,data) => {
