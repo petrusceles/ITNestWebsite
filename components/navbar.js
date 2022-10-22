@@ -1,7 +1,7 @@
 import LogoImage from '../public/images/logo.png'
 import Image from 'next/image'
-// import {Link} from 'react-scroll'
-import Link from 'next/link'
+import { Link, animateScroll as scroll } from "react-scroll";
+// import Link from 'next/link'
 import { useRef } from 'react'
 
 
@@ -20,9 +20,9 @@ export default function Navbar () {
         <div className='flex py-3 fixed bg-white left-0 z-[10] w-full px-12 lg:px-8 shadow-md'>
             <div className='container lg:flex lg:items-center'>
                 <div className='w-1/4 px-2 md:px-12 flex'>
-                    <Link href="./">
+                    <Link activeClass="active" spy={true} smooth={true} duration={500} offset={-50} to="home">
                         <a>
-                            <div className='w-[60px] flex'>
+                            <div className='w-[60px] flex cursor-pointer'>
                                 <Image
                                 src={LogoImage}
                                 alt='logo'
@@ -68,8 +68,8 @@ function NavList({list}) {
     return (
     <>
         <div className='lg:w-max w-full flex group pt-7 lg:pt-0 items-center relative'>
-            <Link href={'#' + list.replace(/\s/g, '').toLowerCase()}>
-                <a className='h-[100%] block lg:px-3 font-medium align-middle'>{list}</a>
+            <Link activeClass="active" spy={true} smooth={true} duration={500} offset={-50} to={list.replace(/\s/g, '').toLowerCase()}>
+                <a className='h-[100%] block lg:px-3 font-medium align-middle cursor-pointer'>{list}</a>
             </Link>
             <div className='absolute w-full -bottom-3 flex  lg:justify-center -z-10'>
                 <span className='w-0 group-hover:w-3/4 transition-all duration-200 ease-in-out h-[3px] my-2 block bg-primary rounded-full'></span>
