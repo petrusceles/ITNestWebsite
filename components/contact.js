@@ -1,5 +1,6 @@
 
 import { useState} from "react"
+import { Slide } from "react-awesome-reveal";
 import { toast, ToastContainer } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 export default function Contact() {
@@ -56,7 +57,8 @@ export default function Contact() {
             pauseOnHover
             theme="colored"
             />
-            <div id="contact" className="grid grid-rows-1 text-base lg:py-24 py-20 gap-3 lg:grid-rows-3 lg:grid-flow-col lg:text-lg text-dark">
+             <Slide cascade={true} damping={0.01} triggerOnce={true} direction="up">
+            <div id="contact" className="grid grid-rows-1 text-base lg:py-24 py-10 gap-3 lg:grid-rows-3 lg:grid-flow-col lg:text-lg text-dark">
                 <div className="flex flex-col lg:row-span-3 lg:order-1 justify-center items-center lg:bg-gradient-to-r lg:from-violet-100 lg:to-cyan-50 rounded-2xl">
                     <h1 className="text-2xl font-semibold lg:text-3xl">CONTACT</h1>
                     <p className="text-base">Get in touch with us</p>
@@ -80,6 +82,7 @@ export default function Contact() {
                     <button onClick={handleSubmitButton} className="font-semibold bg-primary py-2 align-middle text-center text-white px-9 rounded-lg lg:h-1/2 hover:bg-white hover:outline hover:outline-[3px] hover:outline-offset-[-3px] hover:outline-primary hover:text-primary duration-150 ease-in-out">Submit</button>
                 </div>
             </div>
+            </Slide>
         </>
     )
 }
