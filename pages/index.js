@@ -15,7 +15,7 @@ export default function Home() {
   const value = {imageCounter,setImageCounter}
 
   useEffect(() => {
-    if (imageCounter >= 4) {
+    if (imageCounter >= 6) {
       setLoaded(true)
     }
     console.log(loaded)
