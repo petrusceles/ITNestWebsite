@@ -43,7 +43,7 @@ export default function Home() {
     const interval = !loaded && setInterval(() => {
       setTimePassed((prev) => {return prev+1});
     },1000) 
-
+    console.log("Halo ",imageCounter)
     return () => clearInterval(interval);
   },[timePassed])
   return (

@@ -8,6 +8,7 @@ export default function SolutionSegment ({title,content,image,tagline, id,icon})
         setImageCounter((prev) => {
             return prev+1
         })
+        console.log("Count " + imageCounter)
     }
     return (
         <>
@@ -18,14 +19,16 @@ export default function SolutionSegment ({title,content,image,tagline, id,icon})
                     <Image
                     src={image}
                     alt={title+" Solution"}
-                    onLoadingComplete={changeState}/>
+                    onLoadingComplete={changeState}
+                    loading="eager"/>
                     
                 </div>
                 <div className={'w-10/12 lg:max-w-lg flex justify-center items-center absolute -z-10' + (id % 2 != 0 ? " scale-90":"")}>
                     <Image
                     src={Blob}
                     alt={title+" Solution"}
-                    onLoadingComplete={changeState}/>
+                    onLoadingComplete={changeState}
+                    loading="eager"/>
                 </div>
             </div>
             <div className={' order-2 grid items-center grid-cols-1 pt-8 gap-2 lg:col-span-4 lg:gap-4' + (id % 2 == 0 ? " lg:order-3":" lg:order-1")}>
@@ -46,7 +49,8 @@ export default function SolutionSegment ({title,content,image,tagline, id,icon})
                     <Image
                     src={icon}
                     alt={title+" Icon"}
-                    />
+                    onLoadingComplete={changeState}
+                    loading="eager"/>
                 </div>
             </div>
         </div>

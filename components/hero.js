@@ -31,6 +31,7 @@ export default function Hero() {
           <Image
             src={heroImage}
             alt='hero image'
+            loading='eager'
           />
           </Slide>
         </div>
