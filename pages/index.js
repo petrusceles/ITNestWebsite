@@ -9,35 +9,8 @@ import ImageLoadContext from "../components/context/ImageLoadContext";
 import { useEffect, useState } from "react";
 
 export default function Home() {
-  const [imageCounter,setImageCounter] = useState(0)
-  const [loaded,setLoaded] = useState(false)
-
-  const value = {imageCounter,setImageCounter}
-  const [timePassed, setTimePassed] = useState(0)
-  useEffect(() => {
-    if (imageCounter >= 6) {
-      setLoaded(true)
-    }
-
-    if (timePassed >= 8) {
-      setLoaded(true)
-      clearInterval(interval);
-    }
-
-    console.log(timePassed)
-    
-    const interval = !loaded && setInterval(() => {
-      setTimePassed((prev) => {return prev+1});
-    },1000) 
-
-    return () => clearInterval(interval);
-  },[timePassed])
-  return (
-    <>
-    {!loaded && <Loading />}
-    <ImageLoadContext.Provider value={value}>
-    <Layout>
-    <div className='bg-gradient-to-r from-violet-100 to-cyan-50 '>
+  const layout = (<Layout>
+    <div className='bg-gradient-to-r from-violet-100 to-cyan-50'>
       <div className='container px-12 lg:px-8'>
         <Hero/>
       </div>
@@ -52,7 +25,34 @@ export default function Home() {
       <Footer />
       </div>
     </div>
-  </Layout>
+  </Layout>)
+  const [imageCounter,setImageCounter] = useState(0)
+  const [loaded,setLoaded] = useState(false)
+
+  const value = {imageCounter,setImageCounter}
+  const [timePassed, setTimePassed] = useState(0)
+  useEffect(() => {
+    if (imageCounter >= 6 || timePassed >= 4) {
+      setLoaded(true)
+      clearInterval(interval);
+      document.body.classList.remove("overflow-hidden")
+    } else {
+      document.body.classList.add("overflow-hidden")
+    }
+
+    console.log(timePassed)
+    
+    const interval = !loaded && setInterval(() => {
+      setTimePassed((prev) => {return prev+1});
+    },1000) 
+
+    return () => clearInterval(interval);
+  },[timePassed])
+  return (
+    <>
+    {!loaded && <Loading />}
+    <ImageLoadContext.Provider value={value}>
+      {layout}
     </ImageLoadContext.Provider>
     </>
     )

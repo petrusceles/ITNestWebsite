@@ -10,7 +10,7 @@ export const siteTitle = 'IT NEST';
 
 export default function Layout({ children}) {
   return (
-    <div className='scroll-smooth'>
+    <div className='scroll-smooth overflow-hidden'>
       <Head>
         <link rel="icon" href="/favicon.ico" />
         <meta
