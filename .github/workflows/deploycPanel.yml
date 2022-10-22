@@ -1,7 +1,7 @@
 on:
   push:
     branches:
-      -master
+      - master
 name: Publish Website to Cpanel
 jobs:
   web-deploy:
