@@ -8,7 +8,6 @@ export default function SolutionSegment ({title,content,image,tagline, id,icon})
         setImageCounter((prev) => {
             return prev+1
         })
-        console.log("Count " + imageCounter)
     }
     return (
         <>
