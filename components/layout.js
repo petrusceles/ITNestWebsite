@@ -12,12 +12,14 @@ export default function Layout({ children}) {
   return (
     <div className='scroll-smooth overflow-hidden'>
       <Head>
-        <link rel="icon" href="/favicon.ico" />
+        <title>IT NEST</title>
+        <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
         <meta
           name="description"
           content="it solution for every aspect"
         />
         <meta name="og:title" content={siteTitle} />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
       <header>
