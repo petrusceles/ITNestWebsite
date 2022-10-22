@@ -2,6 +2,7 @@ import heroImage from '../public/images/Hero.png'
 import Link from 'next/link';
 import Image from 'next/image';
 import { Fade, Slide } from 'react-awesome-reveal';
+import { createContext } from 'react';
 export default function Hero() {
     return (
     <div id='home' className='flex lg:flex-wrap lg:flex pt-32 pb-8 gap-3 lg:gap-1'>
