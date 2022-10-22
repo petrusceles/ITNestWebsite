@@ -9,6 +9,7 @@ export default function Loading() {
                 <div className="lg:w-1/12 w-1/6 flex justify-self-center self-end">
                     <Image
                         src={LogoImage}
+                        priority
                     />
                 </div>
                 <div className="w-full">

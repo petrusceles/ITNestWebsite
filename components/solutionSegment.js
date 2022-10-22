@@ -6,9 +6,6 @@ import Blob from '../public/images/blob.png'
 
 
 export default function SolutionSegment ({title,content,image,tagline, id,icon}) {
-    const buttonIcon = (<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" className="bi bi-laptop-fill" viewBox="0 0 16 16">
-                            <path d="M2.5 2A1.5 1.5 0 0 0 1 3.5V12h14V3.5A1.5 1.5 0 0 0 13.5 2h-11zM0 12.5h16a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 12.5z"/>
-                        </svg>)
     return (
         <>
         {/* <Slide damping={0.6} delay={100} triggerOnce={true}> */}
@@ -18,12 +15,14 @@ export default function SolutionSegment ({title,content,image,tagline, id,icon})
                     <Image
                     src={image}
                     alt={title+" Solution"}
+                    placeholder='blur'
                     />
                 </div>
                 <div className={'w-10/12 lg:max-w-lg flex justify-center items-center absolute -z-10' + (id % 2 != 0 ? " scale-90":"")}>
                     <Image
                     src={Blob}
                     alt={title+" Solution"}
+                    placeholder='blur'
                     />
                 </div>
             </div>
@@ -45,6 +44,7 @@ export default function SolutionSegment ({title,content,image,tagline, id,icon})
                     <Image
                     src={icon}
                     alt={title+" Icon"}
+                    placeholder='blur'
                     />
                 </div>
             </div>
