@@ -5,6 +5,8 @@ import WhyUs from "../components/whyus";
 import Footer from "../components/footer";
 import Contact from '../components/contact';
 import { Slide } from "react-awesome-reveal";
+import { useEffect, useState } from "react";
+import Loading from "../components/loading";
 // import { getSortedPostsData } from '../lib/posts';
 
 // export async function getStaticProps() {
@@ -17,26 +19,30 @@ import { Slide } from "react-awesome-reveal";
 // }
 
 export default function Home() {
-  return (
-    <Layout>
-      <div className='bg-gradient-to-r from-violet-100 to-cyan-50 '>
-        <div className='container px-12 lg:px-8'>
-          <Hero/>
-        </div>
-      </div>
-      {/* <Slide cascade={true} damping={0.1}> */}
-      <div className="container px-12 lg:px-8">
-        <Solution />
-        <WhyUs />
-        <Contact />
-      </div>
+  const [loaded,setLoaded] = useState(false);
 
-      {/* </Slide> */}
-      <div className='bg-gradient-to-r from-violet-100 to-cyan-50 '>
-        <div className='container px-12 lg:px-8'>
-        <Footer />
+  useEffect(() => {
+    setLoaded(true)
+  })
+    return (
+      <>
+      {loaded ? (<Layout>
+        <div className='bg-gradient-to-r from-violet-100 to-cyan-50 '>
+          <div className='container px-12 lg:px-8'>
+            <Hero/>
+          </div>
         </div>
-      </div>
-    </Layout>
-  );
+        <div className="container px-12 lg:px-8">
+          <Solution />
+          <WhyUs />
+          <Contact />
+        </div>
+        <div className='bg-gradient-to-r from-violet-100 to-cyan-50 '>
+          <div className='container px-12 lg:px-8'>
+          <Footer />
+          </div>
+        </div>
+      </Layout>) : (<Loading />)}
+      </>
+    );
 }
