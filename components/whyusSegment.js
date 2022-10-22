@@ -1,4 +1,3 @@
-import parse from 'html-react-parser';
 import Image from "next/image"
 import { Slide } from 'react-awesome-reveal';
 import ImageRendered from "./whyusIcon"
