@@ -9,10 +9,6 @@ import AIIcon from '../public/images/solutionIcons/ai.png'
 import IoTIcon from '../public/images/solutionIcons/iot.png'
 import SoftwareIcon from '../public/images/solutionIcons/software.png'
 
-import AIBlob from '../public/images/solutionBlobs/aiBlob.png'
-import IoTBlob from '../public/images/solutionBlobs/iotBlob.png'
-import SoftwareBlob from '../public/images/solutionBlobs/softwareBlob.png'
-
 import SolutionContent from '../posts/solutionContents.json' assert {type: 'json'};
 export default function Solution () {
     const solutions = SolutionContent.solution;
