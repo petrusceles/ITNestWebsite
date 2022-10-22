@@ -7,7 +7,7 @@ export default function WhyUs() {
   let whyusSegmentReadyToUse = whyusContent.map((e,i) => {
     return (
       <>
-        <WhyusSegment title={e.title} content={e.content} key={e.id}/>
+        <WhyusSegment key={e.id} title={e.title} content={e.content}/>
       </>
     )
   })
