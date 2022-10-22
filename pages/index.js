@@ -39,6 +39,8 @@ export default function Home() {
     } else {
       document.body.classList.add("overflow-hidden")
     }
+
+    console.log(timePassed)
     
     const interval = !loaded && setInterval(() => {
       setTimePassed((prev) => {return prev+1});
