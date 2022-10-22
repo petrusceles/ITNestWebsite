@@ -32,7 +32,7 @@ export default function Home() {
   const value = {imageCounter,setImageCounter}
   const [timePassed, setTimePassed] = useState(0)
   useEffect(() => {
-    if (imageCounter >= 6 || timePassed >= 10) {
+    if (imageCounter >= 6|| timePassed >= 10) {
       setLoaded(true)
       clearInterval(interval);
       document.body.classList.remove("overflow-hidden")
@@ -48,7 +48,25 @@ export default function Home() {
     <>
     {!loaded && <Loading />}
     <ImageLoadContext.Provider value={value}>
-      {layout}
+      <div className={!loaded ? "hidden":""}>
+        <Layout>
+          <div className='bg-gradient-to-r from-violet-100 to-cyan-50'>
+            <div className='container px-12 lg:px-8'>
+              <Hero/>
+            </div>
+          </div>
+          <div className="container px-12 lg:px-8">
+            <Solution />
+            <WhyUs />
+            <Contact />
+          </div>
+          <div className='bg-gradient-to-r from-violet-100 to-cyan-50 '>
+            <div className='container px-12 lg:px-8'>
+            <Footer />
+            </div>
+          </div>
+        </Layout>
+      </div>
     </ImageLoadContext.Provider>
     </>
     )

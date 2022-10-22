@@ -4,9 +4,9 @@ import LogoImage from '../public/images/logo.png'
 export default function Loading() {
     return (
         <>
-        <div className="h-screen flex z-50 bg-white">
-            <div className="grid grid-rows-2 w-full justify-center items-center my-auto lg:px-36">
-                <div className="lg:w-1/12 w-1/6 flex justify-self-center self-end">
+        <div className="h-screen flex z-50 fixed w-screen">
+            <div className="grid grid-rows-2 w-full justify-center items-center my-auto lg:px-36 mx-auto">
+                <div className="lg:min-w-[120px] lg:w-1/12 w-1/6 max-w-2xl lg:max-w-none flex justify-self-center self-end">
                     <Image
                         src={LogoImage}
                         priority
