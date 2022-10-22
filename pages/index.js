@@ -32,7 +32,7 @@ export default function Home() {
   const value = {imageCounter,setImageCounter}
   const [timePassed, setTimePassed] = useState(0)
   useEffect(() => {
-    if (imageCounter >= 6 || timePassed >= 4) {
+    if (imageCounter >= 6 || timePassed >= 10) {
       setLoaded(true)
       clearInterval(interval);
       document.body.classList.remove("overflow-hidden")
