@@ -36,14 +36,12 @@ export default function Home() {
       setLoaded(true)
       clearInterval(interval);
       document.body.classList.remove("overflow-hidden")
-    } else {
-      document.body.classList.add("overflow-hidden")
     }
     
     const interval = !loaded && setInterval(() => {
       setTimePassed((prev) => {return prev+1});
     },1000) 
-    console.log("Halo ",imageCounter)
+
     return () => clearInterval(interval);
   },[timePassed])
   return (
