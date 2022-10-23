@@ -1,6 +1,6 @@
 
 import Image from "next/image"
-import LogoImage from '../public/images/lg.png'
+import LogoImage from '../public/images/Hero.png'
 export default function Loading() {
     return (
         <>

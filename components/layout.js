@@ -16,9 +16,10 @@ export default function Layout({ children}) {
         <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
         <meta
           name="description"
-          content="it solution for every field"
+          content="it solution for every aspect"
         />
         <meta name="og:title" content={siteTitle} />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
       <header>
