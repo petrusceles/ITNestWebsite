@@ -1,4 +1,4 @@
-import LogoImage from '../public/images/logo.png'
+import LogoImage from '../public/images/lg.png'
 import Image from 'next/image'
 import { Link, animateScroll as scroll } from "react-scroll";
 // import Link from 'next/link'
@@ -24,7 +24,7 @@ export default function Navbar () {
                             <div className='w-[60px] flex cursor-pointer'>
                                 <Image
                                 src={LogoImage}
-                                alt='logo'
+                                alt='logonav'
                                 />
                             </div>
                     </Link>
