@@ -9,7 +9,7 @@ export default function Loading() {
                 <div className="lg:min-w-[120px] lg:w-1/12 w-1/6 max-w-2xl lg:max-w-none flex justify-self-center self-end">
                     <Image
                         src={LogoImage}
-                        priority
+                        alt="logo"
                     />
                 </div>
                 <div className="w-full">
