@@ -2,7 +2,7 @@ import heroImage from '../public/images/Hero.png'
 import Link from 'next/link';
 import Image from 'next/image';
 import { Fade, Slide } from 'react-awesome-reveal';
-import { createContext } from 'react';
+import { Link, animateScroll as scroll } from "react-scroll";
 export default function Hero() {
     return (
     <div id='home' className='flex lg:flex-wrap lg:flex pt-32 pb-8 gap-3 lg:gap-1'>
@@ -18,7 +18,7 @@ export default function Hero() {
           <p className='text-sm lg:text-lg text-justify text-dark'>IT-NEST was established in 2022. Responding to the global digital and technology transformation in the industry, we offers IT Solutions and digital products, such as Robotics, IoT, AI, and Web Development.</p>
         </div>
         <div className='my-2'>
-          <Link href='#contact'>
+        <Link activeClass="active" spy={true} smooth={true} duration={500} offset={-50} to={"contact"}>
             <a className='bg-primary px-6 py-2 font-semibold text-white text-sm rounded-full lg:text-lg lg:py-2 hover:bg-transparent hover:outline lg:hover:outline-3 lg:hover:outline-offset-[-2px] hover:outline-[3px] hover:outline-primary hover:text-primary transtition duration-150 ease-in-out'>Contact Us</a>
           </Link>
         </div>
