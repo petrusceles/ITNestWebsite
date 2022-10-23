@@ -1,5 +1,4 @@
 import heroImage from '../public/images/Hero.png'
-import Link from 'next/link';
 import Image from 'next/image';
 import { Fade, Slide } from 'react-awesome-reveal';
 import { Link, animateScroll as scroll } from "react-scroll";
