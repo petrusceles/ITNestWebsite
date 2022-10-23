@@ -1,4 +1,4 @@
-import LogoImage from '../public/images/Hero.png'
+import LogoImage from '../public/images/logo.png'
 import Image from 'next/image'
 import { Link, animateScroll as scroll } from "react-scroll";
 // import Link from 'next/link'
