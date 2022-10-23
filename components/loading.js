@@ -10,7 +10,6 @@ export default function Loading() {
                     <Image
                         src={LogoImage}
                         alt="logo"
-                        priority
                     />
                 </div>
                 <div className="w-full">
