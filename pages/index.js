@@ -37,6 +37,8 @@ export default function Home() {
       clearInterval(interval);
       document.body.classList.remove("overflow-hidden")
     }
+
+    console.log(timePassed)
     
     const interval = !loaded && setInterval(() => {
       setTimePassed((prev) => {return prev+1});
