@@ -9,7 +9,6 @@
 /coverage
 
 # next.js
-/.next/
 /out/
 
 # production
@@ -29,3 +28,5 @@ yarn-error.log*
 .env.test.local
 .env.production.local
 .env
+
+*.zip
