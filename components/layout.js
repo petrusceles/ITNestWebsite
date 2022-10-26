@@ -12,11 +12,11 @@ export default function Layout({ children}) {
   return (
     <div className='scroll-smooth overflow-hidden'>
       <Head>
-        <title>IT NEST</title>
+        <title>IT NEST : Tech Development Service</title>
         <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
         <meta
           name="description"
-          content="it solution for every aspect"
+          content="Build your AI, IoT, and Software Application to bring your company to the next step of an era"
         />
         <meta name="og:title" content={siteTitle} />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
