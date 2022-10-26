@@ -1,5 +1,5 @@
-import Image from "next/image";
-import itnest from "../public/images/footer/itnest.svg";
+
+import { Link, animateScroll as scroll } from "react-scroll";
 
 export default function Footer() {
   return (
@@ -7,36 +7,25 @@ export default function Footer() {
       <div className="pt-10 pb-8 lg:pb-9 grid grid-cols-2 lg:grid-cols-4">
         <div className="block space-y-5 order-1 lg:order-2 lg:font-bold lg:pl-16 ">
           <div>
-            <a
-              href="#home"
-              className="hover:text-primary transition duration-200"
-            >
+            <Link href="#home" activeClass="active" spy={true} smooth={true} duration={500} offset={-50} to="home">
+
               Home
-            </a>
+            </Link>
           </div>
           <div>
-            <a
-              href="#solutions"
-              className="hover:text-primary transition duration-200"
-            >
+          <Link href="#solution" activeClass="active" spy={true} smooth={true} duration={500} offset={-50} to="solution">
               Solutions
-            </a>
+            </Link>
           </div>
           <div>
-            <a
-              href="#whyus"
-              className="hover:text-primary transition duration-200"
-            >
+          <Link href="#whyus" activeClass="active" spy={true} smooth={true} duration={500} offset={-50} to="whyus">
               Why Us
-            </a>
+            </Link>
           </div>
           <div>
-            <a
-              href="#contact"
-              className="hover:text-primary transition duration-200"
-            >
+          <Link href="#contact" activeClass="active" spy={true} smooth={true} duration={500} offset={-50} to="contact">
               Contact
-            </a>
+            </Link>
           </div>
         </div>
         <div className="order-3  items-center lg:order-3 lg:pl-10">
