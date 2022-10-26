@@ -17,14 +17,13 @@ export default function Hero() {
           <p className='text-sm lg:text-lg text-justify text-dark'>IT-NEST was established in 2022. Responding to the global digital and technology transformation in the industry, we offers IT Solutions and digital products, such as Robotics, IoT, AI, and Web Development.</p>
         </div>
         <div className='my-2'>
-        <Link activeClass="active" spy={true} smooth={true} duration={500} offset={-50} to={"contact"}>
-            <a className='bg-primary px-6 py-2 font-semibold text-white text-sm rounded-full lg:text-lg lg:py-2 hover:bg-transparent hover:outline lg:hover:outline-3 lg:hover:outline-offset-[-2px] hover:outline-[3px] hover:outline-primary hover:text-primary transtition duration-150 ease-in-out cursor-pointer'>Contact Us</a>
+        <Link href="#contact" activeClass="active" spy={true} smooth={true} duration={500} offset={-50} to={"contact"}>
+            <p className='bg-primary px-6 py-2 font-semibold text-white text-sm rounded-full lg:text-lg lg:py-2 hover:bg-transparent hover:outline lg:hover:outline-3 lg:hover:outline-offset-[-2px] hover:outline-[3px] hover:outline-primary hover:text-primary transtition duration-150 ease-in-out cursor-pointer w-fit'>Contact Us</p>
           </Link>
         </div>
         </Fade>
       </div>
       <div className='w-[50%] overflow-hidden lg:w-[53%] justify-center flex pt-12 pl-8 lg:pt-0 lg:mx-auto lg:pl-20'>
-        
         <div className='relative scale-[2] md:scale-[1.3] lg:scale-100 w-full lg:w-10/12 flex items-center lg:items-end'>
         <Slide direction='up' triggerOnce={true}>
           <Image

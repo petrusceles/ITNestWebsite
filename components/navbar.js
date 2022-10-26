@@ -20,7 +20,7 @@ export default function Navbar () {
         <div className='flex py-3 fixed bg-white left-0 z-[10] w-full px-12 lg:px-8 shadow-md'>
             <div className='container lg:flex lg:items-center'>
                 <div className='w-1/4 px-2 md:px-12 flex'>
-                    <Link activeClass="active" spy={true} smooth={true} duration={500} offset={-50} to="home">
+                    <Link href="#home" activeClass="active" spy={true} smooth={true} duration={500} offset={-50} to="home">
                             <div className='w-[60px] flex cursor-pointer'>
                                 <Image
                                 src={LogoImage}
@@ -66,7 +66,7 @@ function NavList({list}) {
     return (
     <>
         <div className='lg:w-max w-full flex group pt-7 lg:pt-0 items-center relative'>
-            <Link activeClass="active" spy={true} smooth={true} duration={500} offset={-50} to={list.replace(/\s/g, '').toLowerCase()}>
+            <Link href={`#${list.replace(/\s/g, '').toLowerCase()}`} activeClass="active" spy={true} smooth={true} duration={500} offset={-50} to={list.replace(/\s/g, '').toLowerCase()}>
                 <p className='h-[100%] block lg:px-3 font-medium align-middle cursor-pointer'>{list}</p>
             </Link>
             <div className='absolute w-full -bottom-3 flex  lg:justify-center -z-10'>
@@ -96,26 +96,26 @@ function NavList({list}) {
 }
 
 
-export function SolutionDropDown({className}) {
-    return (
-        <>
-        <div className={className}>
-            <div className='relative'>
-                <Link href={'#learn'}>
-                    <a className='h-[120%] block lg:py-2 lg:hover:bg-primary lg:hover:text-white align-middle lg:rounded-md lg:px-3 hover:text-primary transition duration-200 ease-in-out w-full'>AI Solution</a>
-                </Link>
-            </div>
-            <div className='py-3 relative'>
-                <Link href={'#learn'}>
-                    <a className='h-[120%] block lg:py-2 lg:hover:bg-primary lg:hover:text-white align-middle lg:rounded-md lg:px-3 hover:text-primary transition duration-200 ease-in-out w-full'>IoT Solution</a>
-                </Link>
-            </div>
-            <div className='relative'>
-                <Link href={'#learn'}>
-                    <a className='h-[120%] block lg:py-2 lg:hover:bg-primary lg:hover:text-white align-middle lg:rounded-md lg:px-3 hover:text-primary transition duration-200 ease-in-out w-full'>Software Solution</a>
-                </Link>
-            </div>
-        </div>
-        </>
-    )
-}
+// export function SolutionDropDown({className}) {
+//     return (
+//         <>
+//         <div className={className}>
+//             <div className='relative'>
+//                 <Link href={'#learn'}>
+//                     <a className='h-[120%] block lg:py-2 lg:hover:bg-primary lg:hover:text-white align-middle lg:rounded-md lg:px-3 hover:text-primary transition duration-200 ease-in-out w-full'>AI Solution</a>
+//                 </Link>
+//             </div>
+//             <div className='py-3 relative'>
+//                 <Link href={'#learn'}>
+//                     <a className='h-[120%] block lg:py-2 lg:hover:bg-primary lg:hover:text-white align-middle lg:rounded-md lg:px-3 hover:text-primary transition duration-200 ease-in-out w-full'>IoT Solution</a>
+//                 </Link>
+//             </div>
+//             <div className='relative'>
+//                 <Link href={'#learn'}>
+//                     <a className='h-[120%] block lg:py-2 lg:hover:bg-primary lg:hover:text-white align-middle lg:rounded-md lg:px-3 hover:text-primary transition duration-200 ease-in-out w-full'>Software Solution</a>
+//                 </Link>
+//             </div>
+//         </div>
+//         </>
+//     )
+// }
