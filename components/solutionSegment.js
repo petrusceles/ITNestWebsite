@@ -32,7 +32,7 @@ export default function SolutionSegment ({title,content,image,tagline, id,icon})
             </div>
             <div className={' order-2 grid items-center grid-cols-1 pt-8 gap-2 lg:col-span-4 lg:gap-4' + (id % 2 == 0 ? " lg:order-3":" lg:order-1")}>
                 <div className='flex items-center'>
-                    <h3 className='text-2xl font-medium lg:text-3xl text-dark'>{title}</h3>
+                    <h2 className='text-2xl font-medium lg:text-3xl text-dark'>{title}</h2>
                     <div className='ml-3 lg:ml-6 flex px-3 py-1 justify-end bg-gradient-to-l from-violet-100 via-cyan-50 to-white w-full rounded-md'>
                         <p className='text-sm font-medium lg:text-base text-dark'>{tagline}</p>
                     </div>
