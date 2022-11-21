@@ -14,6 +14,7 @@ export default function Layout({ children}) {
       <Head>
         <title>IT NEST : Tech Development Service</title>
         <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+        <link rel="canonical" href="https://itnest.net" />
         <meta
           name="description"
           content="Build your AI, IoT, and Software Application to bring your company to the next step of an era"
